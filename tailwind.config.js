@@ -1,3 +1,4 @@
+import {fontFamily} from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -9,6 +10,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    colors:{
+      'color-1':'#f5f5f5',
+      'color-2':'#ffffff',
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -17,6 +22,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        popins: ["var(--font-poppins)", ...fontFamily.serif],
+    },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
