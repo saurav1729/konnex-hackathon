@@ -4,7 +4,7 @@ import Bulb from "@/components/Bulb";
 
 export default function Home() {
   return (
-    <div className="w-full h-auto flex">
+    <div>
       <Fan/>
       <Bulb/>
     </div>
