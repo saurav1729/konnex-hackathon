@@ -13,6 +13,7 @@ module.exports = {
     colors:{
       'color-1':'#f5f5f5',
       'color-2':'#ffffff',
+      'color-3':'#80808040'
     },
     container: {
       center: true,

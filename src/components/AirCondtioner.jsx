@@ -34,24 +34,24 @@ const AirConditioner = () => {
             <Image src='/images/ac.png' height={100} width={100} className='h-100 w-100'/>
         </div>
      <div className='flex items-center justify-center gap-2'>
-        <button className={`rounded-full p-2 px-4 opacity-50 cursor-not-allowed':'opacity:100  `} ></button>
-        <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto'>
+        <button className={`rounded-full p-2 px-4 opacity-50 cursor-not-allowed':'opacity:100 hover:bg-color-3 `} ></button>
+        <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto hover:bg-color-3'>
         <div className='flex flex-col justify-center items-center'>
                     <div className='text-xs font-popins flex justify-start'>State:</div>
                     <div className='text-sm font-popins flex justify-center'>{state===0?'Off':'On'}</div>
                 </div>
             </div>
-            <button className={`rounded-full p-2 px-4 bg-color-1 opacity:100 cursor-pointer `} onClick={handleClick} ><GiPowerButton/></button>
+            <button className={`rounded-full p-3 bg-color-1 opacity:100 cursor-pointer hover:bg-color-3 `} onClick={handleClick} ><GiPowerButton/></button>
         </div> 
         <div className='flex items-center justify-center gap-2'>
-        <button className={`rounded-full p-2 px-4 bg-color-1 ${temperature===16?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer'} `} onClick={handleClickMinus} disabled={temperature===16?true:false}>-</button>
-            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto'>
+        <button className={`rounded-full p-2 px-4 bg-color-1 ${temperature===16?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer hover:bg-color-3'} `} onClick={handleClickMinus} disabled={temperature===16?true:false}>-</button>
+            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto hover:bg-color-3'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='text-xs font-popins flex justify-start'>Temperature:</div>
                     <div className='text-sm font-popins flex justify-center'>{temperature}</div>
                 </div>
             </div>
-            <button className={`rounded-full p-2 px-4 bg-color-1 ${temperature===30?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer'} `} onClick={handleClickPlus} disabled={temperature===30?true:false}>+</button>
+            <button className={`rounded-full p-2 px-4 bg-color-1 ${temperature===30?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer hover:bg-color-3'} `} onClick={handleClickPlus} disabled={temperature===30?true:false}>+</button>
         </div>
             
     </div>

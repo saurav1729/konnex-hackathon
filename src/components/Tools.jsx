@@ -2,6 +2,7 @@ import React from 'react'
 import Fan from './Fan'
 import AirConditioner from './AirCondtioner'
 import Led from './Led'
+import Bulb from './Bulb'
 
 const Tools = () => {
   return (
@@ -10,6 +11,7 @@ const Tools = () => {
         <div className='text-xl font-popins font-bold text-center my-4'>Our Services</div>
         <div className='flex flex-wrap justify-center items-center max-w-6xl mx-auto gap-4'>
             <Fan/>
+            <Bulb/>
             <Led/>
             <AirConditioner/>
 

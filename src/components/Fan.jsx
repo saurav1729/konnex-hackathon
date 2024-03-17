@@ -23,14 +23,14 @@ const Fan = () => {
             <Image src='/images/fan.png' height={100} width={100} className='h-100 w-100'/>
         </div>
         <div className='flex items-center justify-center gap-2'>
-        <button className={`rounded-full p-2 px-4 bg-color-1 ${speed===0?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer'} `} onClick={handleClickMinus} disabled={speed===0?true:false}>-</button>
-            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto'>
-                <div className='flex flex-col justify-center items-center'>
-                    <div className='text-xs font-popins flex justify-start'>Speed:</div>
-                    <div className='text-sm font-popins flex justify-center'>{speed}</div>
+        <button className={`rounded-full p-2 px-4 bg-color-1 ${speed===0?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer hover:bg-color-3'}  `} onClick={handleClickMinus} disabled={speed===0?true:false}>-</button>
+            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto hover:bg-color-3'>
+                <div className='flex flex-col justify-center items-center '>
+                    <div className='text-xs font-popins flex justify-start '>Speed:</div>
+                    <div className='text-sm font-popins flex justify-center '>{speed}</div>
                 </div>
             </div>
-            <button className={`rounded-full p-2 px-4 bg-color-1 ${speed===5?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer'} `} onClick={handleClickPlus} disabled={speed===5?true:false}>+</button>
+            <button className={`rounded-full p-2 px-4 bg-color-1 ${speed===5?'opacity-50 cursor-not-allowed':'opacity:100 cursor-pointer hover:bg-color-3'}  `} onClick={handleClickPlus} disabled={speed===5?true:false}>+</button>
         </div>
             
     </div>

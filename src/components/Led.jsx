@@ -15,7 +15,7 @@ const Led = () => {
         </div>
         <div className='flex items-center justify-center gap-2'>
         
-            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto'>
+            <div className='rounded-md px-5 py-1 bg-color-1 w-[120px] mx-auto hover:bg-color-3'>
             <div className='flex flex-col justify-center items-center'>
                     <div className='text-xs font-popins flex justify-start'>Color:</div>
                     <div className={`text-sm font-popins flex justify-center h-4 w-4 mx-2 rounded-full bg-[${color}]`}>{color}</div>
@@ -24,7 +24,7 @@ const Led = () => {
                 
                 
             </div>
-            <div className='rounded-full p-2  bg-color-1 flex items-center justify-center'><input className='rounded-full h-6 w-6' value={color} type='color' onChange={(e)=>{
+            <div className='hover:bg-color-3 rounded-full p-2  bg-color-1 flex items-center justify-center'><input className='hover:bg-color-3 rounded-full h-6 w-6' value={color} type='color' onChange={(e)=>{
                     setColor(e.target.value);
                 }}></input></div>
             
